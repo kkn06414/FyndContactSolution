@@ -1,0 +1,16 @@
+<template>
+  <lightning-card title="Contacts" icon-name="standard:contact">
+    <div class="slds-m-around_medium">
+      <template if:true={contactData.data}>
+        <div style="height: 800px">
+          <lightning-datatable
+            key-field="id"
+            data={contactData.data}
+            columns={columns}
+          >
+          </lightning-datatable>
+        </div>
+      </template>
+    </div>
+  </lightning-card>
+</template>
